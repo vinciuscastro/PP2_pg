@@ -4,7 +4,16 @@
 
 O objetivo deste projeto é criar e visualizar uma cena 3D, mapeando os conceitos estudados. A implementação é realizada utilizando JavaScript e a biblioteca WebGL Three.js.
 
+## Objetos
+
+Dado: Vinicius
+Esferas: Marcelo
+
 ## Instruções
+
+Na pasta raiz do projeto, execute o comando "npm init -y" no terminal para iniciar um repositório node.
+Em seguida execute o comando "node server.js" para implementar o servidor na porta 3000.
+Agora é só abrir o link "http://localhost:3000".
 
 ## Comandos
 
