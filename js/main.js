@@ -54,12 +54,17 @@ let sZ = 0.01;
 
 const velMovimento = 0.1;
 
+const shader = new THREE.RawShaderMaterial({
+    vertexShader: document.getElementById('vertex-shader').textContent,
+    fragmentShader: document.getElementById('fragment-shader').textContent,
+    side: THREE.DoubleSide,
+});
+
 const formatoEsfera = new THREE.SphereGeometry(0.2, 32, 32);
 const qtdEsferas = 3;
 
 for (let i = 0; i < qtdEsferas; i++) {
-    const materialEsfera = new THREE.MeshBasicMaterial({color: 0xff00000});
-    const esfera = new THREE.Mesh(formatoEsfera, materialEsfera);
+    const esfera = new THREE.Mesh(formatoEsfera, shader);
     cubo.add(esfera);
 }
 

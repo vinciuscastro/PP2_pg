@@ -11,6 +11,27 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="ico/favicon.ico">
 
+  <script type="x-shader/x-vertex" id="vertex-shader">
+    precision highp float;
+        uniform mat4 modelViewMatrix;
+        uniform mat4 projectionMatrix;
+        attribute vec3 position;
+        attribute vec3 offset;
+        varying vec3 vColor;
+        void main() {
+          vColor = normalize(position) * 0.5 + 0.5;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position + offset, 1.0);
+        }
+  </script>
+
+  <script type="x-shader/x-fragment" id="fragment-shader">
+    precision highp float;
+        varying vec3 vColor;
+        void main() {
+            gl_FragColor = vec4(vColor, 1.0);
+        }
+  </script>
+
 </head>
 
 <body>
