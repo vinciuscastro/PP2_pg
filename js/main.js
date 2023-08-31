@@ -54,6 +54,16 @@ let sZ = 0.01;
 
 const velMovimento = 0.1;
 
+const formatoEsfera = new THREE.SphereGeometry(0.2, 32, 32);
+const qtdEsferas = 3;
+
+for (let i = 0; i < qtdEsferas; i++) {
+    const materialEsfera = new THREE.MeshBasicMaterial({color: 0xff00000});
+    const esfera = new THREE.Mesh(formatoEsfera, materialEsfera);
+    cubo.add(esfera);
+}
+
+
 const atualizaVelocidade = (vel) => {
     sX = vel;
     sY = vel;
@@ -69,6 +79,17 @@ const animate = () => {
     cubo.rotation.x += sX;
     cubo.rotation.y += sY;
     cubo.rotation.z += sZ;
+
+    const time = Date.now() * 0.001;
+
+    cubo.children.forEach((sphere, index) => {
+        const radius = 1 + index / 3;
+        const angle = time * (index + 1) * (index % 2 === 0 ? 1 : -1);
+        sphere.position.x = radius * Math.cos(angle);
+        sphere.position.y = radius * Math.sin(angle);
+        sphere.position.z = radius * Math.sin(angle);
+    });
+
     controls.update();
     renderer.render(scene, camD);
 };
