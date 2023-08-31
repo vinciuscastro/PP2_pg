@@ -10,7 +10,7 @@ O objetivo deste projeto é criar e visualizar uma cena 3D, mapeando os conceito
 
 ## Comandos
 
-- Setas do teclado : movimento do cubo nos eixos x e y
+- Setas do teclado: movimento do cubo nos eixos x e y
 - Tecla 1: diminui a velocidade de rotação do cubo;
 - Tecla 2: aumenta a velocidade de rotação do cubo;
 - Tecla 3: para a rotação do cubo totalmente;
