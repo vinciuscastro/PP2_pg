@@ -16,7 +16,7 @@ O objetivo deste projeto é criar e visualizar uma cena 3D, mapeando os conceito
 - Tecla 3: para a rotação do cubo totalmente;
 - Tecla 0: troca para câmera dinâmica;
 - Tecla 9: troca para câmera estática;
-- Clique esquerdo do mouse: roatciona a perspectiva;
+- Clique esquerdo do mouse: rotaciona a perspectiva;
 - Scroll do Mouse: Zoom In e Zoom Out;
 - Tecla X: rotaciona no eixo x;
 - Tecla y: rotaciona no eixo y;
