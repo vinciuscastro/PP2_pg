@@ -16,8 +16,8 @@ Esferas: Marcelo
 
 ## Instruções
 
-- Na pasta raiz do projeto, execute o comando "npm init -y" no terminal para iniciar um repositório node.
-- Em seguida execute o comando "node server.js" para implementar o servidor na porta 3000.
+- Na pasta raiz do projeto execute o comando "node server.js" para implementar o servidor na porta 3000.
+(Caso a porta 3000 ja esteja sendo utilizada por outro processo é necessário alterar o número da porta em server.js)
 - Agora é só abrir o link "http://localhost:3000".
 
 ## Comandos
