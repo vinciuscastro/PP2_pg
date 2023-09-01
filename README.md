@@ -6,7 +6,8 @@ O objetivo deste projeto é criar e visualizar uma cena 3D, mapeando os conceito
 
 ## Objetos
 
-Dado: Vinicius \n Esferas: Marcelo
+-Dado: Vinicius 
+-Esferas: Marcelo
 
 ## Requisitos
 
