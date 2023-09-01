@@ -1,13 +1,23 @@
 # Visualização de Cena 3D com Three.js
+## Projeto Parcial 2
 
 ## Objetivo
 
-O objetivo deste projeto é criar e visualizar uma cena 3D, mapeando os conceitos estudados. A implementação é realizada utilizando JavaScript e a biblioteca WebGL Three.js.
+O objetivo deste projeto é criar e visualizar uma cena 3D, mapeando os conceitos estudados. 
+A implementação é realizada utilizando JavaScript e a biblioteca WebGL Three.js.
 
 ## Objetos
 
--Dado: Vinicius 
--Esferas: Marcelo
+- Dado: Vinicius 
+- Esferas: Marcelo
+- Demais implementações foram feitas em conjunto
+
+## Especificação de avaliação
+- [x] Visualização de pelo menos um objeto 3D por membro do grupo, redimensionando e posicionando cada objeto individualmente no ambiente virtual;
+- [x] Utilização de um shader próprio em um dos objetos (RawShaderMaterial);
+- [x] Definição de pelo menos duas câmera;
+- [x] Movimento simples de pelo menos um objeto;
+- [x] Documentar no github (readme principal), contendo: as especificações atendidas do projeto, modo de interação e descrição das principais características implementadas.
 
 ## Requisitos
 
@@ -29,6 +39,7 @@ O objetivo deste projeto é criar e visualizar uma cena 3D, mapeando os conceito
 - Tecla 0: troca para câmera dinâmica;
 - Tecla 9: troca para câmera estática;
 - Clique esquerdo do mouse: rotaciona a perspectiva;
+- Clique direito no mouse: movimenta o objeto livremente nos eixos x e y;
 - Scroll do Mouse: Zoom In e Zoom Out;
 - Tecla X: acelera a rotação no primeiro eixo;
 - Tecla y: acelera a rotação no segundo eixo;
