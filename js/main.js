@@ -76,10 +76,16 @@ for (let i = 0; i < qtdEsferas; i++) { //Criação das esferas
 }
 
 
-const atualizaVelocidade = (vel) => { //Função para atualizar a velocidade de rotação do cubo
-    sX = vel;
-    sY = vel;
-    sZ = vel;
+const atualizaVelocidade = (vel, modo) => { //Função para atualizar a velocidade de rotação do cubo
+    if (modo == 0) { //Verifica se o modo é 0 para parar o cubo
+        sX = vel;
+        sY = vel;
+        sZ = vel;
+    } else if(modo == 1){ //Verifica se o modo é 1 para acelerar o cubo
+        sX += vel;
+        sY += vel;
+        sZ += vel;
+    }
 };
 
 const moveX = () => sX += velRotacao; //Funções para acelerar o cubo no primeiro eixo
@@ -112,13 +118,13 @@ animate();
 window.addEventListener("keydown", (event) => { //Eventos de teclado
     switch (event.key) {
         case "1":
-            atualizaVelocidade(velRotacao - 0.05); //Diminui a velocidade de rotação do cubo
+            atualizaVelocidade(velRotacao - 0.02, 1); //Diminui a velocidade de rotação do cubo
             break;
         case "2":
-            atualizaVelocidade(velRotacao + 0.05); //Aumenta a velocidade de rotação do cubo
+            atualizaVelocidade(velRotacao + 0.01, 1); //Aumenta a velocidade de rotação do cubo
             break;
         case "3":
-            atualizaVelocidade(0); //Para a rotação do cubo
+            atualizaVelocidade(0, 0); //Para a rotação do cubo
             break;
         case '0':
             camera = 0; //Camera dinamica
