@@ -1,6 +1,10 @@
 # Visualização de Cena 3D com Three.js
 Projeto Parcial 2 realizado para a disciplina de Processamento Gráfico
 
+## Alunos
+Marcelo Pirro 800510
+Vinicius Silva Castro 802138
+
 ## Preview
 ![image](https://github.com/vinciuscastro/PP2_pg/assets/79222545/d0f8d293-895a-4cce-a815-b4110e0f2056)
 
